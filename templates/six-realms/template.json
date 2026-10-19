@@ -1,0 +1,72 @@
+{
+  "id": "six-realms-original",
+  "name": "六国争中原 · 原始三阶段模板",
+  "sourceCommit": "372317d",
+  "initialAtlasCommit": "addbfea",
+  "width": 941,
+  "height": 1672,
+  "territoryCount": 130,
+  "stages": [
+    {
+      "id": "terrain",
+      "name": "原始地形图",
+      "file": "base.png",
+      "kind": "imagegen-artwork",
+      "sha256": "a11043225c26faa1e7ec605a7f5512f0a2f604feca446f38a66649d91930dc70"
+    },
+    {
+      "id": "colored",
+      "name": "彩色地块设计图",
+      "file": "reference.png",
+      "kind": "imagegen-color-region-design",
+      "sha256": "75c5993a48ba8a0854c71dc9d0b8bc7f8ca1cd1ae76c43ad83f2a63404c80681"
+    },
+    {
+      "id": "dynamic",
+      "name": "可吞噬动态地图",
+      "file": "index.html",
+      "kind": "indexed-territory-runtime",
+      "dependencies": [
+        "app.mjs",
+        "frontier.mjs",
+        "territories.json",
+        "territories.u16",
+        "material.png",
+        "borders.png",
+        "borders.u8",
+        "demo-pairs.json"
+      ],
+      "preview": "../../workshop/?map=1"
+    }
+  ],
+  "defaults": {
+    "generationAspectRatio": "9:16",
+    "sourceFrame": true,
+    "audienceFrame": true,
+    "cropEachSide": 0.1,
+    "minimumCaptureSeconds": 20,
+    "imageFit": "cover",
+    "preserveAspectRatio": true,
+    "outpainting": "optional",
+    "safeAreaGuides": true,
+    "topSafeFraction": 0.05,
+    "bottomSafeFraction": 0.13849748478559118,
+    "giftPanel": {
+      "logicalWidth": 393,
+      "logicalHeight": 130,
+      "centerFromBottom": 52,
+      "visibleHeight": 117,
+      "includeParticipationStrip": true
+    }
+  },
+  "scope": "Original paired template; no later outpainting, dragon frame, gates, heroes, or live payment integration.",
+  "mapLibraryId": 1,
+  "createdAt": "2026-10-18T19:00:22+08:00",
+  "createdAtBasis": "最早可核实的制作提交 addbfea；并非精确生图起始时间",
+  "behaviorEngine": {
+    "entry": "../../workshop/pipeline.mjs",
+    "version": "1.2.0",
+    "acceptance": "../../workshop/quick-check.mjs",
+    "demoCount": 3
+  }
+}

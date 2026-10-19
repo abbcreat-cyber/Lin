@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "defaultMapId": 1,
+  "nextMapId": 4,
+  "timezone": "Asia/Shanghai",
+  "maps": [
+    {
+      "id": 1,
+      "slug": "six-realms-original",
+      "name": "六国争中原",
+      "subtitle": "六域山河，逐鹿中原",
+      "description": "默认基础模板。原始地形、彩色分区与可吞噬领地完整保留。",
+      "directory": "templates/six-realms",
+      "createdAt": "2026-10-18T19:00:22+08:00",
+      "createdAtBasis": "最早可核实的制作提交 addbfea；并非精确生图起始时间",
+      "dateLabel": "最早制作记录",
+      "cover": "reference.png",
+      "terrain": "base.png",
+      "colored": "reference.png",
+      "territoryCount": 130,
+      "tags": [
+        "默认模板",
+        "六国版图"
+      ],
+      "stage3Status": "已保留动态预览",
+      "package": "packages/map-001.zip",
+      "instruction": "把游戏地图换成 1 号「六国争中原」，使用地图库登记的动态地块与配套素材，保留礼物区和外层 UI。",
+      "workshopUrl": "workshop/?map=1",
+      "projectUid": "dabf5dd0-f2eb-4544-89b1-a5e04e3cf8b1"
+    },
+    {
+      "id": 2,
+      "slug": "four-continents-arena",
+      "name": "四陆环斗",
+      "subtitle": "四方大陆，汇入中央斗兽场",
+      "description": "四块大陆、中央斗兽场及连接桥面均参与分区，支持接触边界后的逐步吞噬。",
+      "directory": "projects/four-continents-arena",
+      "createdAt": "2026-10-19T12:38:18+08:00",
+      "createdAtBasis": "terrain-v1.png 原始生成文件的修改时间，Asia/Shanghai",
+      "dateLabel": "原图生成时间",
+      "cover": "colored-v2.png",
+      "terrain": "terrain-v1.png",
+      "colored": "colored-v2.png",
+      "territoryCount": 251,
+      "tags": [
+        "四大陆",
+        "中心斗兽场"
+      ],
+      "stage3Status": "动态已验证 · 待验收",
+      "package": "packages/map-002.zip",
+      "instruction": "把游戏地图换成 2 号「四陆环斗」，使用地图库登记的动态地块与配套素材，保留礼物区和外层 UI。",
+      "presentation": "projects/four-continents-arena/presentation.json",
+      "workshopUrl": "workshop/?map=2",
+      "projectUid": "b4d5d07f-43c7-4f64-b596-4ee1854bfa78"
+    },
+    {
+      "id": 3,
+      "projectUid": "7efb6689-f86c-456a-a67f-5495e11bf4df",
+      "slug": "map-003",
+      "name": "大混战",
+      "subtitle": "新建地图 · 等待地形图",
+      "description": "下面3块大陆，3条大路连接上方的一大块大陆",
+      "directory": "projects/map-003",
+      "createdAt": "2026-10-19T09:35:59.405505+00:00",
+      "createdAtBasis": "实际创建时间",
+      "dateLabel": "项目创建时间",
+      "cover": "terrain.png",
+      "terrain": "terrain.png",
+      "colored": "colored.png",
+      "territoryCount": 0,
+      "tags": [
+        "新建地图"
+      ],
+      "stage3Status": "第一阶段待制作",
+      "package": "packages/map-003.zip",
+      "presentation": "projects/map-003/presentation.json",
+      "workshopUrl": "workshop/?map=3",
+      "instruction": "继续制作 3 号「大混战」，读取 brief.json 和 template.json，只完成当前授权阶段。"
+    }
+  ],
+  "uiLibrary": "ui/manifest.json"
+}

@@ -1,0 +1,44 @@
+{
+  "method": "source-alpha probes after full nine-patch rendering",
+  "frames": [
+    {
+      "id": "azure",
+      "ornament": {
+        "source": 234,
+        "rendered": 241
+      },
+      "rails": {
+        "top": 251,
+        "bottom": 252,
+        "left": 251,
+        "right": 251
+      },
+      "center": 0
+    },
+    {
+      "id": "phoenix",
+      "ornament": {
+        "source": 245,
+        "rendered": 247
+      },
+      "rails": {
+        "top": 252,
+        "bottom": 253,
+        "left": 252,
+        "right": 253
+      },
+      "center": 0
+    }
+  ],
+  "fixtureCatalogSize": 60,
+  "pagination": [
+    24,
+    48
+  ],
+  "searchAndFilter": true,
+  "sidebarDoesNotGrow": true,
+  "selectionRequiresApply": true,
+  "escape": true,
+  "mobileDialogFits": true,
+  "errors": []
+}

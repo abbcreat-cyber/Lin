@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "engineVersion": "1.2.0",
+  "playableArea": {
+    "version": 1,
+    "kind": "map-frame-opening",
+    "bounds": {
+      "x0": 170,
+      "y0": 84,
+      "x1": 771,
+      "y1": 1468
+    },
+    "layout": {
+      "source": {
+        "width": 491.24999999999994,
+        "height": 873.3333333333333
+      },
+      "mapOpening": {
+        "x": 88.42499999999998,
+        "y": 43.666666666666664,
+        "width": 314.4,
+        "height": 723.6211367127496
+      }
+    },
+    "activeTerritories": 158
+  },
+  "method": "same pipeline, fixed simulation steps; no real-time 20-second wait",
+  "results": [
+    {
+      "label": "中央斗兽场",
+      "source": 224,
+      "target": 180,
+      "passed": true,
+      "idlePatrol": true,
+      "noTeleport": true,
+      "reserveRatio": 0.2,
+      "contactRequired": true,
+      "bodyContainment": true,
+      "pause": true,
+      "consecutiveCaptures": 2,
+      "captureSeconds": 20,
+      "waterUnchanged": true,
+      "exteriorInactive": true,
+      "reset": true,
+      "combat": {
+        "passed": true,
+        "duel": {
+          "hits": 45,
+          "engaged": 36,
+          "losses": {
+            "180": 1,
+            "224": 1
+          },
+          "alive": {
+            "180": 19,
+            "224": 19
+          }
+        },
+        "localResistance": true,
+        "localDefense": true,
+        "mainOrderPreserved": true,
+        "recallNoTeleport": true,
+        "recallMoved": true,
+        "oldAttackStopped": true,
+        "bodyContainment": true,
+        "pause": true,
+        "reset": true
+      }
+    },
+    {
+      "label": "东北连接桥",
+      "source": 2,
+      "target": 219,
+      "passed": true,
+      "idlePatrol": true,
+      "noTeleport": true,
+      "reserveRatio": 0.2,
+      "contactRequired": true,
+      "bodyContainment": true,
+      "pause": true,
+      "consecutiveCaptures": 2,
+      "captureSeconds": 20,
+      "waterUnchanged": true,
+      "exteriorInactive": true,
+      "reset": true,
+      "combat": {
+        "passed": true,
+        "duel": {
+          "hits": 101,
+          "engaged": 25,
+          "losses": {
+            "2": 1,
+            "219": 4
+          },
+          "alive": {
+            "2": 19,
+            "219": 16
+          }
+        },
+        "localResistance": true,
+        "localDefense": true,
+        "mainOrderPreserved": true,
+        "recallNoTeleport": true,
+        "recallMoved": true,
+        "oldAttackStopped": true,
+        "bodyContainment": true,
+        "pause": true,
+        "reset": true
+      }
+    },
+    {
+      "label": "左下大陆",
+      "source": 31,
+      "target": 137,
+      "passed": true,
+      "idlePatrol": true,
+      "noTeleport": true,
+      "reserveRatio": 0.2,
+      "contactRequired": true,
+      "bodyContainment": true,
+      "pause": true,
+      "consecutiveCaptures": 2,
+      "captureSeconds": 20,
+      "waterUnchanged": true,
+      "exteriorInactive": true,
+      "reset": true,
+      "combat": {
+        "passed": true,
+        "duel": {
+          "hits": 63,
+          "engaged": 36,
+          "losses": {
+            "31": 1,
+            "137": 1
+          },
+          "alive": {
+            "31": 19,
+            "137": 19
+          }
+        },
+        "localResistance": true,
+        "localDefense": true,
+        "mainOrderPreserved": true,
+        "recallNoTeleport": true,
+        "recallMoved": true,
+        "oldAttackStopped": true,
+        "bodyContainment": true,
+        "pause": true,
+        "reset": true
+      }
+    }
+  ],
+  "mapId": 2,
+  "durationMs": 2425,
+  "atlasSha256": "7aa3fcedee8233fade0d78a3883b359240e8545508fdadc17d826a69002d97c1",
+  "idsSha256": "427da0fd6ae00bd7b329224cb9c2c8b216b0c76f2376c545100623f6c54f7ab7"
+}

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "top-left, logical units; full host source is 9:16, audience is centered 80% width",
+  "source": {
+    "width": 491.24999999999994,
+    "height": 873.3333333333333
+  },
+  "audience": {
+    "x": 49.12499999999997,
+    "y": 0,
+    "width": 393,
+    "height": 873.3333333333333
+  },
+  "exteriorDimOpacity": 0.8,
+  "mapOpening": {
+    "x": 88.42499999999998,
+    "y": 43.666666666666664,
+    "width": 314.4,
+    "height": 723.6211367127496
+  },
+  "mapFrame": {
+    "x": 51.213405797101444,
+    "y": -47.05924624444847,
+    "width": 388.82318840579705,
+    "height": 839.4879652498364
+  },
+  "giftFrame": {
+    "x": 49.12499999999997,
+    "y": 756.3333333333333,
+    "width": 393,
+    "height": 130,
+    "centerFromBottom": 52,
+    "visibleHeight": 117
+  },
+  "participation": {
+    "x": 88.42499999999998,
+    "y": 752.3788632872503,
+    "width": 314.4,
+    "height": 13.908940092165897,
+    "file": "assets/default/participation-clean-v2.png",
+    "rect": [
+      0,
+      80,
+      2170,
+      96
+    ],
+    "matteKey": {
+      "threshold": 30,
+      "range": 70
+    }
+  },
+  "gifts": [
+    {
+      "key": "fairy-wand",
+      "name": "仙女棒",
+      "effect": "+40兵",
+      "previewLines": [
+        "增援己方",
+        "先加入英雄"
+      ],
+      "diamonds": 1,
+      "file": "assets/default/fairy-wand.png"
+    },
+    {
+      "key": "magic-mirror",
+      "name": "魔法镜",
+      "effect": "+800兵",
+      "previewLines": [
+        "兵种升1级",
+        "最高3级"
+      ],
+      "diamonds": 19,
+      "file": "assets/default/magic-mirror.png"
+    },
+    {
+      "key": "energy-battery",
+      "name": "能量电池",
+      "effect": "+4000兵",
+      "previewLines": [
+        "储备破关",
+        "战备×1"
+      ],
+      "diamonds": 99,
+      "file": "assets/default/energy-battery.png"
+    },
+    {
+      "key": "party-microphone",
+      "name": "派对话筒",
+      "effect": "+1.2万兵",
+      "previewLines": [
+        "集结8秒",
+        "普攻+20%"
+      ],
+      "diamonds": 299,
+      "file": "assets/default/party-microphone.png"
+    },
+    {
+      "key": "mystery-airdrop",
+      "name": "神秘空投",
+      "effect": "共+2万兵",
+      "previewLines": [
+        "分4批到达",
+        "附赠称号"
+      ],
+      "diamonds": 520,
+      "file": "assets/default/mystery-airdrop.png"
+    }
+  ],
+  "giftLayout": {
+    "firstCenterX": -152,
+    "pitch": 46,
+    "width": 45,
+    "iconSize": 29,
+    "iconCenterYUp": 27,
+    "textSize": [
+      9.5,
+      10.5,
+      9
+    ]
+  },
+  "commands": [
+    [
+      "加入赵云",
+      "选择英雄"
+    ],
+    [
+      "征战",
+      "自动抢地"
+    ],
+    [
+      "打关",
+      "攻打关口"
+    ],
+    [
+      "打曹操",
+      "指定对手"
+    ],
+    [
+      "技能打曹操",
+      "释放技能"
+    ],
+    [
+      "停战",
+      "撤回进攻"
+    ]
+  ],
+  "defaultSelection": {
+    "mapFrame": "azure",
+    "giftFrame": "gold"
+  },
+  "frames": {
+    "map": [
+      {
+        "id": "azure",
+        "name": "青龙鎏金 · 当前默认",
+        "file": "assets/default/legend-map-frame-azure-fit-v2.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sourceOpening": [
+          98,
+          166,
+          828,
+          1324
+        ],
+        "railRect": [
+          98,
+          166,
+          828,
+          1324
+        ],
+        "alignment": "structural-rails; draw all nine patches including transparent center and inward ornaments"
+      },
+      {
+        "id": "phoenix",
+        "name": "朱雀赤金 · 测试款",
+        "file": "assets/phoenix/map-v1.png",
+        "size": [
+          1024,
+          1536
+        ],
+        "sourceOpening": [
+          98,
+          166,
+          828,
+          1296
+        ],
+        "railRect": [
+          98,
+          166,
+          828,
+          1296
+        ],
+        "alignment": "structural-rails; draw all nine patches including transparent center and inward ornaments"
+      }
+    ],
+    "gift": [
+      {
+        "id": "gold",
+        "name": "古金兽首 · 当前默认",
+        "file": "assets/default/legend-panel-v1.png",
+        "size": [
+          2171,
+          724
+        ]
+      },
+      {
+        "id": "phoenix",
+        "name": "朱雀赤金 · 测试款",
+        "file": "assets/phoenix/gift-v1.png",
+        "size": [
+          2173,
+          724
+        ]
+      }
+    ]
+  },
+  "provenance": {
+    "code": "cocos-map-war/assets/scripts/Game.ts buildMapFrame and buildHud",
+    "runtimeMeasured": {
+      "mapFrame": [
+        388.82318840579717,
+        839.4879652498364
+      ],
+      "giftFrame": [
+        393,
+        130
+      ]
+    },
+    "rules": [
+      "目标地图四边与礼物槽位固定",
+      "以骨架边轨定位，不能用避开爪子羽毛后的最大空白区定位",
+      "绘制完整RGBA素材的全部九片，保留伸入地图的装饰；中央自然透明由原始alpha决定",
+      "不得清空中心、矩形裁掉装饰或用全内框透明测试误删合法装饰",
+      "新款测量上下左右边轨，检查贴边、装饰保留与内容可读性"
+    ]
+  }
+}

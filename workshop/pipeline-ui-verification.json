@@ -1,0 +1,39 @@
+{
+  "liveResult": {
+    "history": [
+      {
+        "source": 224,
+        "target": 180,
+        "elapsed": 20
+      },
+      {
+        "source": 180,
+        "target": 129,
+        "elapsed": 20
+      }
+    ],
+    "status": {
+      "version": "1.0.0",
+      "status": "captured",
+      "running": true,
+      "paused": false,
+      "captured": 2,
+      "target": 129,
+      "elapsed": 20,
+      "progress": 1,
+      "skipped": 0
+    },
+    "outside": 0,
+    "changed": 5984
+  },
+  "uiResult": {
+    "favoritesPersist": true,
+    "directApply": true,
+    "allSearch": true,
+    "sixtyCardScroll": true,
+    "noRecall": true,
+    "quick1ms": 2804,
+    "quick2ms": 745,
+    "errors": []
+  }
+}

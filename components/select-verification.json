@@ -1,0 +1,16 @@
+{
+  "libraryStageButtonsRemoved": true,
+  "guides": {
+    "source": "3px",
+    "audience": "3px",
+    "safe": "3px",
+    "z": 8,
+    "frame": 4
+  },
+  "mouseSelection": true,
+  "keyboardSelection": true,
+  "escape": true,
+  "mapStateRestored": true,
+  "mobileMenuFits": true,
+  "errors": []
+}

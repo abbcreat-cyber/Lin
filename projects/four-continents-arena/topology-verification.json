@@ -1,0 +1,68 @@
+{
+  "connectedRegions": 251,
+  "pixelCount": 1573352,
+  "landPixels": 902764,
+  "waterPixels": 670588,
+  "anchorsValid": true,
+  "reciprocalAdjacency": true,
+  "allRegions4Connected": true,
+  "centralAndFourMainlandsConnectedViaBridges": true,
+  "namedProbes": [
+    {
+      "area": "中央斗兽场",
+      "id": 180,
+      "component": 1,
+      "neighbors": 8
+    },
+    {
+      "area": "西北连接桥",
+      "id": 173,
+      "component": 1,
+      "neighbors": 7
+    },
+    {
+      "area": "东北连接桥",
+      "id": 219,
+      "component": 1,
+      "neighbors": 12
+    },
+    {
+      "area": "西南连接桥",
+      "id": 133,
+      "component": 1,
+      "neighbors": 8
+    },
+    {
+      "area": "东南连接桥",
+      "id": 108,
+      "component": 1,
+      "neighbors": 5
+    },
+    {
+      "area": "左上大陆",
+      "id": 93,
+      "component": 1,
+      "neighbors": 6
+    },
+    {
+      "area": "右上大陆",
+      "id": 122,
+      "component": 1,
+      "neighbors": 9
+    },
+    {
+      "area": "左下大陆",
+      "id": 137,
+      "component": 1,
+      "neighbors": 5
+    },
+    {
+      "area": "右下大陆",
+      "id": 33,
+      "component": 1,
+      "neighbors": 5
+    }
+  ],
+  "independentSeaProbeCount": 7,
+  "note": "Coverage is measured against the extracted land mask, with independent named geographic probes; not a claim of hand-labelled pixel-perfect sea/land truth."
+}

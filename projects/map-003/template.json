@@ -1,0 +1,60 @@
+{
+  "mapLibraryId": 3,
+  "name": "大混战",
+  "currentStage": 1,
+  "status": "building",
+  "userRequest": "下面3块大陆，3条大路连接上方的一大块大陆",
+  "defaults": {
+    "generationAspectRatio": "9:16",
+    "sourceFrame": true,
+    "audienceFrame": true,
+    "cropEachSide": 0.1,
+    "minimumCaptureSeconds": 20,
+    "imageFit": "cover",
+    "preserveAspectRatio": true,
+    "outpainting": "optional",
+    "safeAreaGuides": true,
+    "topSafeFraction": 0.05,
+    "bottomSafeFraction": 0.13849748478559118,
+    "giftPanel": {
+      "logicalWidth": 393,
+      "logicalHeight": 130,
+      "centerFromBottom": 52,
+      "visibleHeight": 117,
+      "includeParticipationStrip": true
+    }
+  },
+  "stages": [
+    {
+      "number": 1,
+      "name": "原始地形",
+      "status": "building",
+      "file": "terrain.png"
+    },
+    {
+      "number": 2,
+      "name": "彩色分区",
+      "status": "locked",
+      "file": "colored.png"
+    },
+    {
+      "number": 3,
+      "name": "动态领地",
+      "status": "locked",
+      "file": "index.html",
+      "dependencies": [
+        "territories.json",
+        "territories.u16",
+        "material.png",
+        "borders.png",
+        "borders.u8",
+        "demo-pairs.json"
+      ]
+    }
+  ],
+  "behaviorEngine": {
+    "entry": "../../workshop/pipeline.mjs",
+    "version": "1.2.0",
+    "demoCount": 3
+  }
+}

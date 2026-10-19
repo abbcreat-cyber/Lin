@@ -1,0 +1,15 @@
+{
+  "mapId": 2,
+  "mapName": "四陆环斗",
+  "project": "douyin-preview/map-002",
+  "engineVersion": "1.2.0",
+  "view": "audience",
+  "mapFrame": "phoenix",
+  "giftFrame": "phoenix",
+  "exteriorDimOpacity": 0.8,
+  "appIdType": "developer-tool-test-account",
+  "status": "user-approved",
+  "approvalEvidence": "用户：你做的很不错。抖音预览算你过关",
+  "date": "2026-10-19",
+  "oldCocosProjectModified": false
+}

@@ -1,0 +1,25 @@
+{
+  "sourceFiles": {
+    "army-movement.ts": "424b04c89914824582e72b6eeacabf9fdeb73158bf1682a6ba1be17205c1eeeb",
+    "troop-deployment.ts": "6cd0fd0007f1916c07a8821d3ea80bc824664eb8c3b58faae590bfe9d8907235",
+    "war-core.ts": "7bb49f8c9e11080f29cab67688132bd272db337ed3396f524ed27fbe101a3322"
+  },
+  "adapter": "workshop/troop-rules.mjs",
+  "scope": "PersistentTroops movement/order/contact behavior adapted from polygon world to pixel ownership; visual soldier count is not WarState combat strength.",
+  "demoCount": 3,
+  "rules": [
+    "persistent positions",
+    "interior random patrol",
+    "80% mobilized / 20% local reserve",
+    "only ordered frontier",
+    "body-safe owner-only movement",
+    "reachable vanguard contact gates capture",
+    "at least 20 seconds contact time",
+    "pause / reset; auto-select next adjacent target",
+    "patrol after capture"
+  ],
+  "combatBoundary": "No hero, gift, combat damage or complete WarState deployment ledger is claimed by this map-layer preview.",
+  "entry": "pipeline.mjs",
+  "version": "1.0.0",
+  "operation": "one force auto-captures adjacent reachable regions; no recall UI"
+}

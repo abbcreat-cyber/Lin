@@ -1,0 +1,13 @@
+{
+  "topLevelPages": 2,
+  "singleMapCanvas": true,
+  "toolSwitchKeepsBattle": true,
+  "staticViewPauses": true,
+  "resetExact": true,
+  "mapStateIsolation": true,
+  "draftRestored": true,
+  "skinRestored": true,
+  "legacyRedirects": true,
+  "mobileNoOverflow": true,
+  "errors": []
+}

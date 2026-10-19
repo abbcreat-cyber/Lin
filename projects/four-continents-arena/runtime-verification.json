@@ -1,0 +1,150 @@
+{
+  "routes": [
+    {
+      "label": "中央斗兽场",
+      "reachable": 4708,
+      "approachPixels": 54
+    },
+    {
+      "label": "西北连接桥",
+      "reachable": 8712,
+      "approachPixels": 89
+    },
+    {
+      "label": "东北连接桥",
+      "reachable": 7806,
+      "approachPixels": 79
+    },
+    {
+      "label": "西南连接桥",
+      "reachable": 8124,
+      "approachPixels": 35
+    },
+    {
+      "label": "东南连接桥",
+      "reachable": 5309,
+      "approachPixels": 51
+    },
+    {
+      "label": "左上大陆",
+      "reachable": 7116,
+      "approachPixels": 58
+    },
+    {
+      "label": "右上大陆",
+      "reachable": 13600,
+      "approachPixels": 64
+    },
+    {
+      "label": "左下大陆",
+      "reachable": 5976,
+      "approachPixels": 54
+    },
+    {
+      "label": "右下大陆",
+      "reachable": 6818,
+      "approachPixels": 69
+    }
+  ],
+  "realTimeRuns": [
+    {
+      "example": {
+        "label": "中央斗兽场",
+        "source": 224,
+        "target": 180,
+        "probe": [
+          470,
+          680
+        ]
+      },
+      "initial": {
+        "elapsed": 0,
+        "changed": 0
+      },
+      "final": {
+        "progress": 1,
+        "elapsed": 20,
+        "contacts": 6,
+        "recolored": 4708,
+        "reachable": 4708,
+        "complete": true,
+        "waterChanged": 0,
+        "outsiders": 0
+      },
+      "changed": {
+        "changedPixels": 4857,
+        "maxChannelDifference": 184
+      },
+      "pausePassed": true,
+      "patrolPassed": true,
+      "resetDifference": 0,
+      "errors": []
+    },
+    {
+      "example": {
+        "label": "东北连接桥",
+        "source": 2,
+        "target": 219,
+        "probe": [
+          589,
+          552
+        ]
+      },
+      "initial": {
+        "elapsed": 0,
+        "changed": 0
+      },
+      "final": {
+        "progress": 1,
+        "elapsed": 20,
+        "contacts": 4,
+        "recolored": 7806,
+        "reachable": 7806,
+        "complete": true,
+        "waterChanged": 0,
+        "outsiders": 0
+      },
+      "changed": {
+        "changedPixels": 7856,
+        "maxChannelDifference": 241
+      },
+      "pausePassed": true,
+      "patrolPassed": true,
+      "resetDifference": 0,
+      "errors": []
+    },
+    {
+      "example": {
+        "label": "左下大陆",
+        "source": 31,
+        "target": 137,
+        "probe": [
+          218,
+          1030
+        ]
+      },
+      "initial": {
+        "elapsed": 0,
+        "changed": 0
+      },
+      "final": {
+        "progress": 1,
+        "elapsed": 20,
+        "contacts": 5,
+        "recolored": 5976,
+        "reachable": 5976,
+        "complete": true,
+        "waterChanged": 0,
+        "outsiders": 0
+      },
+      "changed": {
+        "changedPixels": 6235,
+        "maxChannelDifference": 237
+      },
+      "pausePassed": true,
+      "patrolPassed": true,
+      "resetDifference": 0,
+      "errors": []
+    }
+  ]
+}

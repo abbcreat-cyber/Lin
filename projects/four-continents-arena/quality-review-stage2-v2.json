@@ -1,0 +1,49 @@
+{
+  "stage": 2,
+  "version": 2,
+  "method": "manual-visual-comparison",
+  "reference": "../../templates/six-realms/reference.png",
+  "terrain": "terrain-v1.png",
+  "candidate": "colored-v2.png",
+  "status": "visual-review-passed-awaiting-user",
+  "checks": [
+    {
+      "id": "four-mainlands",
+      "label": "四块大陆完整分区",
+      "result": "visual-pass",
+      "evidence": "逐一查看左上、右上、左下、右下，色块连续覆盖内陆与沿岸，山峰和森林以地块颜色中的明暗纹理呈现。"
+    },
+    {
+      "id": "central-arena",
+      "label": "中央斗兽场与中心岛",
+      "result": "visual-pass",
+      "evidence": "中心圆形场地已为红色色块，环形看台为多色分区，外围中心岛也有连续彩色地块。"
+    },
+    {
+      "id": "connections",
+      "label": "四条连接桥面",
+      "result": "visual-pass",
+      "evidence": "四桥分别呈粉、黄、蓝、绿领地色，连接外围与中心。"
+    },
+    {
+      "id": "water",
+      "label": "海域与河道不误染",
+      "result": "visual-pass",
+      "evidence": "主要海峡与河道保留蓝色，未出现跨海整片色块。"
+    },
+    {
+      "id": "layout",
+      "label": "保持已确认地形布局",
+      "result": "visual-pass",
+      "evidence": "四大陆位置、中央竞技场与四桥连接、主要海峡形状保持。此项为视觉对照，非逐像素一致性证明。"
+    },
+    {
+      "id": "boundaries",
+      "label": "颜色与边界可辨认",
+      "result": "visual-pass",
+      "evidence": "大部分相邻块异色，内部有细深色边界。像素闭合性与连通拓扑留待获批的第三阶段正式提取后验证，不冒充已通过。"
+    }
+  ],
+  "limits": "这是第二阶段的视觉设计复核，不是已完成的区域ID、像素覆盖率或邻接拓扑验证。海岸高光、建筑描边保留为纹理，不据此声称全部像素已存在归属。",
+  "nextStageAllowed": false
+}

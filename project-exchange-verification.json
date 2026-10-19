@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "existingSharedAssets": {
+    "mapId": 3,
+    "name": "四陆环斗",
+    "duplicate": false,
+    "sourceMapId": 2,
+    "reusedAssets": 10,
+    "addedAssets": 0
+  },
+  "repeatImport": {
+    "mapId": 3,
+    "name": "四陆环斗",
+    "duplicate": true,
+    "reusedAssets": 10,
+    "addedAssets": 0
+  },
+  "missingSharedAssets": {
+    "mapId": 3,
+    "name": "四陆环斗",
+    "duplicate": false,
+    "sourceMapId": 2,
+    "reusedAssets": 0,
+    "addedAssets": 10
+  },
+  "importedMapCombatAcceptance": {
+    "mapId": 3,
+    "passed": true,
+    "scenarios": 3,
+    "durationMs": 2299
+  },
+  "pathTraversalRejected": true,
+  "corruptPayloadRejected": true,
+  "sandbox": "D:\\work\\danmaku-game\\work\\exchange-check-o79ne9bc"
+}

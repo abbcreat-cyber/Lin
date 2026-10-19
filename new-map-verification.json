@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "directWorkshopEntry": true,
+  "uniqueId": 3,
+  "sandboxCreateSaved": true,
+  "sourceCatalogUnchanged": true,
+  "stageGate": [
+    "building",
+    "locked",
+    "locked"
+  ],
+  "selectedFramesPreserved": true,
+  "emptyRequestRejected": true
+}

@@ -1,0 +1,54 @@
+{
+  "adapter": "Current repository PhoneMapCore",
+  "scope": "isolated data compatibility; no live game replacement performed",
+  "results": [
+    {
+      "mapId": 1,
+      "clipped": false,
+      "pair": {
+        "source": 21,
+        "target": 8
+      },
+      "activeRegions": 130,
+      "elapsed": 20,
+      "seaAndOutsidePreserved": true,
+      "resetExact": true
+    },
+    {
+      "mapId": 1,
+      "clipped": true,
+      "pair": {
+        "source": 21,
+        "target": 8
+      },
+      "activeRegions": 108,
+      "elapsed": 20,
+      "seaAndOutsidePreserved": true,
+      "resetExact": true
+    },
+    {
+      "mapId": 2,
+      "clipped": false,
+      "pair": {
+        "source": 188,
+        "target": 69
+      },
+      "activeRegions": 251,
+      "elapsed": 20,
+      "seaAndOutsidePreserved": true,
+      "resetExact": true
+    },
+    {
+      "mapId": 2,
+      "clipped": true,
+      "pair": {
+        "source": 188,
+        "target": 69
+      },
+      "activeRegions": 195,
+      "elapsed": 20,
+      "seaAndOutsidePreserved": true,
+      "resetExact": true
+    }
+  ]
+}

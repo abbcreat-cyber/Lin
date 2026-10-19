@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "syntheticExteriorShortcutBlocked": true,
+  "missingLayoutRejected": true,
+  "reports": [
+    {
+      "map": 2,
+      "removedExteriorLandPixels": 410940,
+      "activeTerritories": 158,
+      "bounds": {
+        "x0": 170,
+        "y0": 84,
+        "x1": 771,
+        "y1": 1468
+      },
+      "edgeCapture": {
+        "source": 10,
+        "target": 122,
+        "changed": 10595,
+        "edgePixels": 219
+      },
+      "quick": {
+        "passed": true,
+        "engineVersion": "1.1.0",
+        "playableArea": {
+          "version": 1,
+          "kind": "map-frame-opening",
+          "bounds": {
+            "x0": 170,
+            "y0": 84,
+            "x1": 771,
+            "y1": 1468
+          },
+          "layout": {
+            "source": {
+              "width": 491.24999999999994,
+              "height": 873.3333333333333
+            },
+            "mapOpening": {
+              "x": 88.42499999999998,
+              "y": 43.666666666666664,
+              "width": 314.4,
+              "height": 723.6211367127496
+            }
+          },
+          "activeTerritories": 158
+        },
+        "method": "same pipeline, fixed simulation steps; no real-time 20-second wait",
+        "results": [
+          {
+            "label": "中央斗兽场",
+            "source": 224,
+            "target": 180,
+            "passed": true,
+            "idlePatrol": true,
+            "noTeleport": true,
+            "reserveRatio": 0.2,
+            "contactRequired": true,
+            "bodyContainment": true,
+            "pause": true,
+            "consecutiveCaptures": 2,
+            "captureSeconds": 20,
+            "waterUnchanged": true,
+            "exteriorInactive": true,
+            "reset": true
+          },
+          {
+            "label": "东北连接桥",
+            "source": 2,
+            "target": 219,
+            "passed": true,
+            "idlePatrol": true,
+            "noTeleport": true,
+            "reserveRatio": 0.2,
+            "contactRequired": true,
+            "bodyContainment": true,
+            "pause": true,
+            "consecutiveCaptures": 2,
+            "captureSeconds": 20,
+            "waterUnchanged": true,
+            "exteriorInactive": true,
+            "reset": true
+          },
+          {
+            "label": "左下大陆",
+            "source": 31,
+            "target": 137,
+            "passed": true,
+            "idlePatrol": true,
+            "noTeleport": true,
+            "reserveRatio": 0.2,
+            "contactRequired": true,
+            "bodyContainment": true,
+            "pause": true,
+            "consecutiveCaptures": 2,
+            "captureSeconds": 20,
+            "waterUnchanged": true,
+            "exteriorInactive": true,
+            "reset": true
+          }
+        ],
+        "durationMs": 786
+      },
+      "errors": []
+    },
+    {
+      "map": 1,
+      "removedExteriorLandPixels": 534009,
+      "activeTerritories": 92,
+      "bounds": {
+        "x0": 170,
+        "y0": 84,
+        "x1": 771,
+        "y1": 1468
+      },
+      "edgeCapture": {
+        "source": 100,
+        "target": 68,
+        "changed": 22666,
+        "edgePixels": 507
+      },
+      "quick": {
+        "passed": true,
+        "engineVersion": "1.1.0",
+        "playableArea": {
+          "version": 1,
+          "kind": "map-frame-opening",
+          "bounds": {
+            "x0": 170,
+            "y0": 84,
+            "x1": 771,
+            "y1": 1468
+          },
+          "layout": {
+            "source": {
+              "width": 491.24999999999994,
+              "height": 873.3333333333333
+            },
+            "mapOpening": {
+              "x": 88.42499999999998,
+              "y": 43.666666666666664,
+              "width": 314.4,
+              "height": 723.6211367127496
+            }
+          },
+          "activeTerritories": 92
+        },
+        "method": "same pipeline, fixed simulation steps; no real-time 20-second wait",
+        "results": [
+          {
+            "label": "中部领地",
+            "source": 8,
+            "target": 88,
+            "passed": true,
+            "idlePatrol": true,
+            "noTeleport": true,
+            "reserveRatio": 0.2,
+            "contactRequired": true,
+            "bodyContainment": true,
+            "pause": true,
+            "consecutiveCaptures": 2,
+            "captureSeconds": 20,
+            "waterUnchanged": true,
+            "exteriorInactive": true,
+            "reset": true
+          },
+          {
+            "label": "上方领地",
+            "source": 34,
+            "target": 77,
+            "passed": true,
+            "idlePatrol": true,
+            "noTeleport": true,
+            "reserveRatio": 0.2,
+            "contactRequired": true,
+            "bodyContainment": true,
+            "pause": true,
+            "consecutiveCaptures": 2,
+            "captureSeconds": 20,
+            "waterUnchanged": true,
+            "exteriorInactive": true,
+            "reset": true
+          },
+          {
+            "label": "下方领地",
+            "source": 27,
+            "target": 45,
+            "passed": true,
+            "idlePatrol": true,
+            "noTeleport": true,
+            "reserveRatio": 0.2,
+            "contactRequired": true,
+            "bodyContainment": true,
+            "pause": true,
+            "consecutiveCaptures": 2,
+            "captureSeconds": 20,
+            "waterUnchanged": true,
+            "exteriorInactive": true,
+            "reset": true
+          }
+        ],
+        "durationMs": 1271
+      },
+      "errors": []
+    }
+  ]
+}

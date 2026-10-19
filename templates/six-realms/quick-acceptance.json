@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "engineVersion": "1.2.0",
+  "playableArea": {
+    "version": 1,
+    "kind": "map-frame-opening",
+    "bounds": {
+      "x0": 170,
+      "y0": 84,
+      "x1": 771,
+      "y1": 1468
+    },
+    "layout": {
+      "source": {
+        "width": 491.24999999999994,
+        "height": 873.3333333333333
+      },
+      "mapOpening": {
+        "x": 88.42499999999998,
+        "y": 43.666666666666664,
+        "width": 314.4,
+        "height": 723.6211367127496
+      }
+    },
+    "activeTerritories": 92
+  },
+  "method": "same pipeline, fixed simulation steps; no real-time 20-second wait",
+  "results": [
+    {
+      "label": "中部领地",
+      "source": 8,
+      "target": 88,
+      "passed": true,
+      "idlePatrol": true,
+      "noTeleport": true,
+      "reserveRatio": 0.2,
+      "contactRequired": true,
+      "bodyContainment": true,
+      "pause": true,
+      "consecutiveCaptures": 2,
+      "captureSeconds": 20,
+      "waterUnchanged": true,
+      "exteriorInactive": true,
+      "reset": true,
+      "combat": {
+        "passed": true,
+        "duel": {
+          "hits": 72,
+          "engaged": 24,
+          "losses": {
+            "8": 1,
+            "88": 2
+          },
+          "alive": {
+            "8": 19,
+            "88": 18
+          }
+        },
+        "localResistance": true,
+        "localDefense": true,
+        "mainOrderPreserved": true,
+        "recallNoTeleport": true,
+        "recallMoved": true,
+        "oldAttackStopped": true,
+        "bodyContainment": true,
+        "pause": true,
+        "reset": true
+      }
+    },
+    {
+      "label": "上方领地",
+      "source": 34,
+      "target": 77,
+      "passed": true,
+      "idlePatrol": true,
+      "noTeleport": true,
+      "reserveRatio": 0.2,
+      "contactRequired": true,
+      "bodyContainment": true,
+      "pause": true,
+      "consecutiveCaptures": 2,
+      "captureSeconds": 20,
+      "waterUnchanged": true,
+      "exteriorInactive": true,
+      "reset": true,
+      "combat": {
+        "passed": true,
+        "duel": {
+          "hits": 36,
+          "engaged": 18,
+          "losses": {
+            "34": 1,
+            "77": 1
+          },
+          "alive": {
+            "34": 19,
+            "77": 19
+          }
+        },
+        "localResistance": true,
+        "localDefense": true,
+        "mainOrderPreserved": true,
+        "recallNoTeleport": true,
+        "recallMoved": true,
+        "oldAttackStopped": true,
+        "bodyContainment": true,
+        "pause": true,
+        "reset": true
+      }
+    },
+    {
+      "label": "下方领地",
+      "source": 27,
+      "target": 45,
+      "passed": true,
+      "idlePatrol": true,
+      "noTeleport": true,
+      "reserveRatio": 0.2,
+      "contactRequired": true,
+      "bodyContainment": true,
+      "pause": true,
+      "consecutiveCaptures": 2,
+      "captureSeconds": 20,
+      "waterUnchanged": true,
+      "exteriorInactive": true,
+      "reset": true,
+      "combat": {
+        "passed": true,
+        "duel": {
+          "hits": 54,
+          "engaged": 33,
+          "losses": {
+            "27": 1,
+            "45": 1
+          },
+          "alive": {
+            "27": 29,
+            "45": 19
+          }
+        },
+        "localResistance": true,
+        "localDefense": true,
+        "mainOrderPreserved": true,
+        "recallNoTeleport": true,
+        "recallMoved": true,
+        "oldAttackStopped": true,
+        "bodyContainment": true,
+        "pause": true,
+        "reset": true
+      }
+    }
+  ],
+  "mapId": 1,
+  "durationMs": 2902,
+  "atlasSha256": "9317430eb7843976b9a369bbae957d9981c7b5a91409821cc213b2eb43ecbdbf",
+  "idsSha256": "3204587060cd0d599f2ef461e987f70ee6240c99c77098bf7394f4b7b0a11145"
+}

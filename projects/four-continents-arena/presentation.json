@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "mapFrame": "phoenix",
+  "giftFrame": "phoenix",
+  "uiProfile": "../../ui/manifest.json",
+  "status": "test-preview-awaiting-review"
+}

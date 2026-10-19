@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#18242e"><title>四陆环斗 · 第 3 阶段 · 动态领地</title><link rel="stylesheet" href="../../templates/six-realms/workbench.css?v=1"><style>
+.map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.terrain{background-image:url('terrain-v1.png')}.colored{background-image:url('colored-v2.png')}.locked-thumb{display:grid;place-items:center;background:repeating-linear-gradient(135deg,#243743 0 5px,#293c48 5px 6px);font-size:10px;color:#b4c2ca}.stage-tabs button:disabled{opacity:.7}.review-section h3{font-family:STZhongsong,SimSun,serif;font-size:24px;font-weight:400;letter-spacing:3px;margin:0 0 13px;color:var(--gold)}.review-points{list-style:none;padding:0;margin:14px 0 20px;color:#bacbd3;font-size:11px;line-height:2.2}.review-points li:before{content:'·';color:var(--jade);margin-right:8px}.original-link{text-decoration:none}.review-copy{font-size:11px;line-height:1.9;color:#bacbd3;margin:9px 0 0}.project-tag{text-decoration:none}
+.quality-review{margin-top:18px;padding:12px;border:1px solid #465c65;border-radius:6px;color:#b7ccd5;font-size:11px;line-height:1.8}.quality-review summary{cursor:pointer;color:var(--jade)}.quality-review ul{padding-left:16px}.quality-review p{font-size:10px;color:var(--muted)}
+.example-label{display:block;color:var(--muted);font-size:10px;margin-bottom:6px}#demo-region{display:block;width:100%;background:#172630;color:#d6e7e8;border:1px solid #536d77;border-radius:6px;padding:10px;font:inherit;margin-bottom:12px}#verification-summary{line-height:1.9;white-space:pre-line}
+#region-overlay{position:absolute;inset:0;z-index:1;opacity:.72;pointer-events:none;width:100%;height:100%;object-fit:cover}.map #units{z-index:2}.debug-toggle{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:7px;margin-top:12px}.debug-toggle input{accent-color:var(--jade)}
+</style></head>
+<body>
+<header class="app-header">
+  <a class="brand" href="../../" aria-label="山河制图台地图库"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M3 25 11 9l5 9 4-13 9 20H3Z"/><path d="m8 25 6-8 5 8M20 5l2 9 4 3"/></svg></span><span><strong>山河制图台</strong><small>群雄逐鹿 · 地图工作台</small></span></a>
+  <div class="header-note"><span class="status-dot"></span>四陆环斗<span class="header-divider"></span><span>新地图 · 第 3 阶段</span></div>
+  <a class="project-tag" href="../../">← 地图库 · 2 号</a>
+</header>
+<main class="workspace">
+  <section class="viewport-panel" aria-label="地图画布">
+    <header class="viewport-toolbar"><div class="canvas-heading"><span class="canvas-symbol" aria-hidden="true">⌖</span><h1 id="modeLabel">第 3 阶段 · 可吞噬领地</h1></div><span class="ratio-badge">9 <span>:</span> 16 <i></i> 等比例取景</span></header>
+    <div class="map-area">
+      <span class="axis-note" aria-hidden="true">PORTRAIT / 9:16</span>
+      <div class="map"><canvas id="map" aria-label="可变色领地地图"></canvas><img id="region-overlay" src="debug-regions.png" alt="区域ID诊断图，不代表领地原始配色" hidden><canvas id="units" aria-label="点击出兵地块，再点击相邻目标"></canvas><div id="template-source" class="template-guide"></div><div id="template-audience" class="template-guide"></div><div id="template-safe" class="template-guide"><div id="template-top"><span>上方安全区 · 5%</span></div><div id="template-gift"><span>下方安全区 · 礼物与说明</span></div></div></div>
+      <span class="canvas-corner corner-tl" aria-hidden="true"></span><span class="canvas-corner corner-br" aria-hidden="true"></span>
+    </div>
+    <footer class="canvas-footer"><span><i class="legend-line source"></i>未裁剪画面</span><span><i class="legend-line audience"></i>观众范围</span><span><i class="legend-line safe"></i>上下安全区</span></footer>
+  </section>
+  <aside class="inspector" aria-label="地图操作面板">
+    <section class="panel-section stages-section"><div class="section-heading"><h2>地图的三个阶段</h2><span>同一张图，逐步成形</span></div>
+      <nav class="stage-tabs" aria-label="地图阶段">
+        <button data-mode="base" aria-pressed="false"><span class="stage-thumb terrain"></span><span class="stage-number">01</span><b>原始地形</b><small>已确认 · 可对照</small></button>
+        <button data-mode="target" aria-pressed="false"><span class="stage-thumb colored"></span><span class="stage-number">02</span><b>彩色分区</b><small>已确认 · 可对照</small></button>
+        <button data-mode="live" aria-pressed="true" aria-current="step"><span class="stage-thumb colored"></span><span class="stage-number">03</span><b>动态领地</b><small>待你验收</small></button>
+      </nav>
+    </section>
+    <section class="panel-section guides-section"><div class="section-heading"><h2>直播取景辅助</h2><span class="tiny-tag">仅辅助显示</span></div>
+      <div class="template-switches">
+        <label><span class="guide-icon source-icon" aria-hidden="true"></span><span class="switch-copy"><b>完整画面</b><small>9:16 · 主播采集范围</small></span><input type="checkbox" data-guide="source" checked aria-label="9:16 未裁剪画面"><span class="switch" aria-hidden="true"></span></label>
+        <label><span class="guide-icon audience-icon" aria-hidden="true"></span><span class="switch-copy"><b>观众可见范围</b><small>左右各裁 10% · 保留中间 80%</small></span><input type="checkbox" data-guide="audience" checked aria-label="观众可见范围"><span class="switch" aria-hidden="true"></span></label>
+        <label><span class="guide-icon safe-icon" aria-hidden="true"></span><span class="switch-copy"><b>上下安全区</b><small>顶部 5% · 底部礼物与说明</small></span><input type="checkbox" data-guide="safe" checked aria-label="上下安全区"><span class="switch" aria-hidden="true"></span></label>
+      </div>
+    </section>
+    <section class="panel-section demo-section">
+      <div class="section-heading"><h2>吞噬演示</h2><span class="duration">20 <small>秒 / 地块</small></span></div>
+      <p class="section-description">先选出兵地块，再点相邻目标。小兵接触边界后才逐步变色。</p>
+      <label class="example-label" for="demo-region">演示位置</label><select id="demo-region" aria-label="演示位置"></select>
+      <button class="primary" id="demo" disabled>播放 20 秒推进</button>
+      <div class="secondary-actions"><button id="pause" disabled>暂停</button><button id="reset" disabled>恢复原貌</button></div>
+      <div class="simulation-status"><div class="status-heading"><span class="status-dot"></span>推进状态</div><div id="status" role="status">正在加载地块数据…</div><div class="bar"><span id="progress"></span></div></div>
+      <p class="section-description" style="margin-top:14px">切换到原图或彩色设计会暂停当前推进；返回动态领地后可继续。</p>
+      <a class="original-link" href="colored-v2.png" target="_blank" rel="noopener">查看已确认高清设计 ↗</a>
+    </section>
+    <section class="panel-section"><div class="section-heading"><h2>第三阶段检查</h2><span class="tiny-tag">数据与行为</span></div><div id="verification-summary" class="section-description">正在读取检查结果…</div><label class="debug-toggle"><input id="inspect-regions" type="checkbox"> 查看地块识别结果</label></section>
+    <footer class="inspector-footer">此处验证地块与吞噬表现<br>尚未接入正式游戏的英雄与战损规则</footer>
+  </aside>
+</main>
+<script type="module" src="guides.mjs?v=2"></script><script type="module">import('./app.mjs?v=4').catch(error=>{document.getElementById('status').textContent='地图数据加载失败，请刷新重试：'+error.message;});</script>
+<script type="module" src="../../ui/overlay.mjs?v=1"></script></body></html>

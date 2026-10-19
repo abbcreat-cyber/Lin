@@ -1,0 +1,10 @@
+import {mount,config} from './renderer.mjs';
+const [profile,project]=await Promise.all([fetch('presentation.json',{cache:'no-store'}).then(r=>r.json()),fetch('template.json',{cache:'no-store'}).then(r=>r.json())]);
+const canvas=document.createElement('canvas');canvas.id='ui-presentation';canvas.setAttribute('aria-label','礼物与地图框装配预览');canvas.style.cssText='position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none';document.querySelector('.map').appendChild(canvas);
+const panel=document.createElement('section');panel.className='panel-section ui-dress';panel.innerHTML=`<div class="section-heading"><h2>框与礼物 · 试装</h2><a href="../../ui/?map=${project.mapLibraryId}" style="color:var(--jade);font-size:11px">素材工坊 ↗</a></div><label class="debug-toggle"><input id="ui-visible" type="checkbox" checked>显示装配效果</label><label class="example-label" for="map-frame-select">地图框</label><select id="map-frame-select"></select><label class="example-label" for="gift-frame-select">礼物框</label><select id="gift-frame-select"></select><p class="section-description" style="margin-top:10px">默认尺寸与位置已锁定 · 当前为测试款</p>`;
+document.querySelector('.stages-section').after(panel);
+const style=document.createElement('style');style.textContent='.ui-dress select{width:100%;background:#172630;color:#d6e7e8;border:1px solid #536d77;border-radius:6px;padding:8px;font:inherit;margin-bottom:10px}.ui-dress .example-label{margin-top:12px}.ui-dress .debug-toggle{margin-bottom:14px}';document.head.appendChild(style);
+for(const kind of ['map','gift']){const select=document.getElementById(kind+'-frame-select');for(const item of config.frames[kind]){const o=document.createElement('option');o.value=item.id;o.textContent=item.name;select.append(o)}select.value=profile[kind+'Frame'];}
+const api=await mount(canvas,profile);window.mapUi=api;
+document.getElementById('ui-visible').onchange=e=>api.set({enabled:e.target.checked});
+for(const kind of ['map','gift'])document.getElementById(kind+'-frame-select').onchange=e=>api.set({[kind+'Frame']:e.target.value});

@@ -1,0 +1,26 @@
+{
+  "giftSlot": [
+    393,
+    130
+  ],
+  "giftCenterFromBottom": 52,
+  "mapOuter": [
+    388.82318840579705,
+    839.4879652498364
+  ],
+  "mapInner": {
+    "x": 88.42499999999998,
+    "y": 43.666666666666664,
+    "width": 314.4,
+    "height": 723.6211367127496
+  },
+  "sameLayoutAcrossSkins": true,
+  "mapOpeningOpaquePixels": 0,
+  "giftAssets": 5,
+  "mobileNoOverflow": true,
+  "copyRequest": true,
+  "dynamicMapStillRuns": true,
+  "errors": [],
+  "status": "superseded",
+  "supersededReason": "The old all-inner-aperture-zero-alpha check incorrectly rejected legitimate inward ornaments; replaced by rail alignment and ornament preservation checks."
+}

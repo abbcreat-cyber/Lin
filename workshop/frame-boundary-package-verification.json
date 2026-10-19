@@ -1,0 +1,16 @@
+[
+  {
+    "mapId": 1,
+    "passed": true,
+    "inactiveExteriorPixels": 741568,
+    "activeTerritories": 92,
+    "idPngMatchesU16": true
+  },
+  {
+    "mapId": 2,
+    "passed": true,
+    "inactiveExteriorPixels": 741568,
+    "activeTerritories": 158,
+    "idPngMatchesU16": true
+  }
+]

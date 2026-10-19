@@ -1,0 +1,100 @@
+{
+  "id": "four-continents-arena",
+  "name": "四陆环斗 · 中心斗兽场",
+  "currentStage": 3,
+  "status": "awaiting-user-approval",
+  "userRequest": "周围4块大陆，中间一个中心斗兽场。每次只做一个阶段，用户同意后才推进下一阶段。",
+  "image": {
+    "file": "colored-v2.png",
+    "width": 941,
+    "height": 1672,
+    "fit": "cover",
+    "version": 2,
+    "role": "approved-stage-2-reference"
+  },
+  "stages": [
+    {
+      "number": 1,
+      "name": "原始地形",
+      "status": "approved",
+      "file": "terrain-v1.png",
+      "approvalEvidence": "用户：好，开始第二阶段",
+      "version": 1
+    },
+    {
+      "number": 2,
+      "name": "彩色分区",
+      "status": "approved",
+      "file": "colored-v2.png",
+      "version": 2,
+      "qualityReview": "quality-review-stage2-v2.json",
+      "versions": [
+        {
+          "version": 1,
+          "file": "colored-v1.png",
+          "status": "rejected",
+          "reason": "中央斗兽场和桥梁未分区，山林大量漏染，不符合全陆地彩色模板"
+        },
+        {
+          "version": 2,
+          "file": "colored-v2.png",
+          "status": "approved"
+        }
+      ],
+      "approvalEvidence": "用户：好，开始第三阶段吧"
+    },
+    {
+      "number": 3,
+      "name": "动态领地",
+      "status": "awaiting-user-approval",
+      "file": "index.html",
+      "version": 1,
+      "kind": "indexed-territory-runtime",
+      "verification": [
+        "topology-verification.json",
+        "runtime-verification.json"
+      ],
+      "dependencies": [
+        "app.mjs",
+        "frontier.mjs",
+        "territories.json",
+        "territories.u16",
+        "material.png",
+        "borders.png",
+        "borders.u8",
+        "demo-pairs.json"
+      ],
+      "preview": "../../workshop/?map=2"
+    }
+  ],
+  "defaults": {
+    "generationAspectRatio": "9:16",
+    "sourceFrame": true,
+    "audienceFrame": true,
+    "cropEachSide": 0.1,
+    "minimumCaptureSeconds": 20,
+    "imageFit": "cover",
+    "preserveAspectRatio": true,
+    "outpainting": "optional",
+    "safeAreaGuides": true,
+    "topSafeFraction": 0.05,
+    "bottomSafeFraction": 0.13849748478559118,
+    "giftPanel": {
+      "logicalWidth": 393,
+      "logicalHeight": 130,
+      "centerFromBottom": 52,
+      "visibleHeight": 117,
+      "includeParticipationStrip": true
+    }
+  },
+  "territoryCount": 251,
+  "mapLibraryId": 2,
+  "createdAt": "2026-10-19T12:38:18+08:00",
+  "createdAtBasis": "terrain-v1.png 原始生成文件的修改时间，Asia/Shanghai",
+  "behaviorEngine": {
+    "entry": "../../workshop/pipeline.mjs",
+    "version": "1.2.0",
+    "acceptance": "../../workshop/quick-check.mjs",
+    "demoCount": 3
+  }
+}
